@@ -1,0 +1,137 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+* {
+    font-family: 'Lato',"Microsoft YaHei","Hiragino Sans GB","SimHei,STHeiti";
+    font-weight: 300px;
+  
+   
+    /* border: 1px solid #8196ab !important; */
+}
+html, body {
+    height: 100%;
+}
+body {
+    margin: 0;
+}
+
+.container {
+    width: 75%;
+    margin: 20px auto 40px auto;
+}
+.row {
+    display: flex;
+    flex-wrap:nowrap;
+    justify-content: space-between;
+    width: 100%;
+}
+.col-4 {
+    width: 33.33%;
+    text-align: center;
+}
+.col-6 {
+    width: 50%;
+}
+.col-12 {
+    width: 100%;
+}
+.row>.col-12>h2 {
+    margin: 20px auto 0 10px;
+    color: rgb(208, 208, 211);
+}
+.low-line {
+    width: 100%;
+    height: 5px;
+}
+.line {
+    margin: 10px;
+    height: 3px;
+    width: 98%;
+    background-color: #bbbbbb;
+
+}
+.logo {
+    width :100px;
+    height: 100px;
+    text-align: center;
+    color:#8196ab; 
+}
+img {
+    max-width: 100%;
+    padding: 10px;
+    height: auto;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    position: relative;
+   
+}
+
+h1,h3 {
+    margin: 10px;
+    font-weight: 12px;
+    color: #bbbbbb;
+    text-transform: uppercase;
+    text-align: right;
+}
+h1 {
+    font-size:56px;
+}
+h2 {
+    margin: 0px;
+    font-size: 30px;
+    color: #8196ab;
+}
+h3 {
+    font-size: 22px;
+    
+}
+a {
+    text-decoration: none;
+    color: #8196ab;
+    font-size: 15px;
+    cursor: pointer;
+}
+a:hover,img:hover {
+    transform: scale(1.5);
+    transition: all .4s ease-in-out;
+    color: rgb(48, 47, 47);
+    display: inline-block;
+}
+#hero:hover {
+    transform: scale(1);
+}
+@media only screen and (max-width:1024px){
+
+    h1 {
+        font-size:1.5rem;
+    }
+    h2 {
+        font-size: 1rem;
+    }
+    h3{
+        font-size:1rem;
+    }
+    a {
+        font-size: 1rem;
+    }
+}
+@media only screen and (max-width:320px){
+    
+        h1 {
+            font-size:0.8rem;
+        }
+        h2 {
+            font-size: 0.6rem;
+        }
+        h3{
+            font-size:0.3rem;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+      
+    }
