@@ -24,7 +24,7 @@ body {
 }
 .row {
     display: flex;
-    flex-wrap:nowrap;
+    flex-wrap:wrap;
     justify-content: space-between;
     width: 100%;
 }
@@ -104,34 +104,49 @@ a:hover,img:hover {
 #hero:hover {
     transform: scale(1);
 }
-@media only screen and (max-width:1024px){
+@media screen and (min-width: 1200px) {
+    .container {
+      width: 1115px;
+    }
+  }
 
+@media screen and (max-width: 1199px) and (min-width: 992px) {
     h1 {
-        font-size:1.5rem;
+      font-size: 55px;
     }
+  }
+  @media screen and (max-width: 991px) {
+    .container {
+      max-width: 750px;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+    .col-4,
+    .col-6 {
+      width: 100%;
+    }
+    .middle {
+      text-align: center;
+    }
+    .separator {
+      height: 2px;
+    }
+    h1,
+    h3,
     h2 {
-        font-size: 1rem;
+        text-align: center;
     }
-    h3{
-        font-size:1rem;
+    h1 {
+       font-size: 40px;
     }
-    a {
-        font-size: 1rem;
+    h3 {
+        font-size:25px;
     }
-}
-@media only screen and (max-width:320px){
-    
-        h1 {
-            font-size:0.8rem;
-        }
-        h2 {
-            font-size: 0.6rem;
-        }
-        h3{
-            font-size:0.3rem;
-            text-overflow: ellipsis;
-            overflow: hidden;
-            white-space: nowrap;
-        }
+    embed {
+        width: 100px;
+        height: 100px;
+    }
+  }
+
       
-    }
+
